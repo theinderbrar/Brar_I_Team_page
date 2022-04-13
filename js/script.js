@@ -20,7 +20,7 @@ const imageContainer = document.querySelector('.member__dp img');
 
 ////////////////// Starting Changes
 
-imageContainer.src = '/img/team/' + memberDp[currentMember];
+imageContainer.src = 'img/team/' + memberDp[currentMember];
 nameContainer.textContent = memberName[currentMember];
 descriptionContainer.textContent = memberDescription[currentMember];
 
@@ -32,7 +32,7 @@ previousButton.addEventListener('click', function (e) {
   if (currentMember < 0) {
     currentMember = memberName.length - 1;
   }
-  imageContainer.src = '/img/team/' + memberDp[currentMember];
+  imageContainer.src = 'img/team/' + memberDp[currentMember];
   nameContainer.textContent = memberName[currentMember];
   descriptionContainer.textContent = memberDescription[currentMember];
 });
@@ -42,7 +42,7 @@ nextButton.addEventListener('click', function (e) {
   if (currentMember > memberName.length - 1) {
     currentMember = 0;
   }
-  imageContainer.src = '/img/team/' + memberDp[currentMember];
+  imageContainer.src = 'img/team/' + memberDp[currentMember];
   nameContainer.textContent = memberName[currentMember];
   descriptionContainer.textContent = memberDescription[currentMember];
 });
